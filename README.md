@@ -7,7 +7,9 @@
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)&nbsp;
 
 
-## ANTÜ website
+## [ANTÜ website](https://melisadigiacomo.github.io/product-landingpage/)
 This is a landing page to show the products and the different resources of a brand. It is a combination of the aesthetics of the brand and my design. It is responsive, interactive and has the key links to be redirected. I worked with this brand before when designing the catalog and the digital illustrations for the Instagram account.
+
+### [Link here](https://melisadigiacomo.github.io/product-landingpage/)
 
 ![ANTU-landingpage](images/antu-landingpage.jpg)
