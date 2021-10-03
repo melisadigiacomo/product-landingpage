@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Product Landing Page</title>
+</head>
+
+<body>
+    <div class="circle"></div>
+    <header>
+        <nav>
+            <a href="#"><img src="images/logo.png" class="logo" alt="logo"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="https://www.instagram.com/antuvelasdesoja/" target="_blank">Instagram</a></li>
+                <li><a href="mailto:antuvelasdesoja@gmail.com">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <div class="textbox">
+            <h2>Velas de soja <br><span>ANTÜ</span></h2>
+            <p>Velas aromáticas de cera de soja hechas a mano con aromas especialmente seleccionados.</p>
+            <p>Utilizamos esencias de alta calidad permitiendo que sus perfumes sean especiales, logrando que perduren
+                con mayor intensidad en tus ambientes.</p>
+            <p>Nuestras velas están pensadas para cada momento y lugar. Seleccionamos cada elemento con mucho cuidado,
+                ofreciendo un producto delicado para que tus rincones sean cálidos y auténticos.</p>
+            <a href="https://drive.google.com/file/d/1e3_dV16NEiYCYQ7Krdq9MlJo3dPktC0Q/view" target="_blank">Catálogo online</a>
+        </div>
+
+        <div class="imagebox">
+            <img src="images/vela22.png" alt="vela clasica" class="image">
+        </div>
+    </main>
+
+    <footer>
+        <ul class="littleimage">
+            <li><img src="images/vela2.png" onclick="imgSlider('images/vela22.png')" alt="clasica"></li>
+            <li><img src="images/vela3.png" onclick="imgSlider('images/vela33.png')" alt="cuyen"></li>
+            <li><img src="images/vela1.png" onclick="imgSlider('images/vela11.png')" alt="capri"></li>
+        </ul>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="JS/script.js"></script>
+
+</body>
+
+</html>
