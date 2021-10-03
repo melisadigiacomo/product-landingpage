@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+/* Global settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background-color: rgb(241, 240, 230);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header */
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    position: relative;
+    max-width: 100px;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: black;
+    font-weight: 500;
+    margin-left: 40px;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+nav ul li a:hover {
+    background: rgb(148, 160, 94);
+    color: black;
+    border-radius: 40px;
+    padding: 10px 10px;
+}
+
+/* Main */
+
+.content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textbox h2 {
+    font-size: 4rem;
+    line-height: 6rem;
+    font-weight: 500;
+    max-width: 90%;
+}
+
+.content .textbox h2 span {
+    color: rgb(148, 160, 94);
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.content .textbox p {
+    line-height: 2rem;
+    max-width: 90%;
+}
+
+.content .textbox a {
+    display: inline-block;
+    max-width: 90%;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: rgb(148, 160, 94);
+    color: black;
+    border-radius: 40px;
+    border: solid 2px rgb(148, 160, 94);
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.content .textbox a:hover {    
+    background: rgb(241, 240, 230);
+    color: rgb(148, 160, 94);
+    font-weight: 700;
+}
+
+.content .imagebox {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content .imagebox .image {
+    width: 350px;
+}
+
+/* Footer */
+
+.littleimage {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.littleimage li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.littleimage li:hover {
+    transform: translateY(-15px);
+}
+
+.littleimage li img {
+    max-width: 80px;
+}
+
+/* background circle */
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(148, 160, 94);
+    clip-path: circle(600px at right 800px);
+}
+
+/* Media queries */
+
+@media (max-width: 1100px) {
+    body {
+        padding: 120px 20px;
+    }
+    nav {
+        padding: 20px 20px;
+    }
+    /* Hamburger menu */
+    nav ul {
+        display: none;
+    }
+    .toggle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url('../images/menu.png');
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+        z-index: 11;
+    }
+    .toggle.show-links {
+        background: url('../images/close.png');
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+    }
+    .navigation.show-links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(241, 240, 230);
+        z-index: 10;
+    }
+    nav ul li a {
+        font-size: 2rem;
+        line-height: 60px;
+    }
+    nav ul li a:hover {
+        border-radius: 30px;
+        padding: 8px 8px;
+    }
+    .logo {
+        max-width: 80px;
+    }
+    .content {
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+    .content .textbox h2 {
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+    .content .textbox h2 span {
+        font-size: 4rem;
+    }
+    .circle {
+        clip-path: circle(400px at center bottom);
+    }
+    .content .imagebox .image {
+        width: 300px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    .circle {
+        display: none;
+    }
+    nav ul li a {
+        margin-left: 0;
+    }
+    .content .imagebox .image {
+        width: 200px;
+    }
+    .littleimage {
+        left: 50%;
+    }
+    .littleimage li img {
+        max-width: 45px;
+    }
+
+}
